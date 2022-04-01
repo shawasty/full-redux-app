@@ -6,7 +6,7 @@ export const Post =({post}) =>{
         <article className="post-excerpt">
             <h2 style={{color: 'red'}}>{post.title}</h2>
 
-            <p>{post.body.substring(0, 100) }</p>
+            <p style={{color: 'blue'}} >{post.body.substring(0, 100) }</p>
         </article>
     )
 }
