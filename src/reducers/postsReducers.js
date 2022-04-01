@@ -1,13 +1,5 @@
-// import { combineReducers } from "redux";
-// import postsReducer from './postsReducers'
 
-
-// // when we have multiple reducers,
-// //for example, post reducers, comment reducers
-
-
-// const rootReducer = combineReducers()
-import * as actions from '../actions/PostsActions'
+import * as actions from '../actions/postsActions'
 export const initialState = {
     posts: [],
     loading: false,

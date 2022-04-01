@@ -1,17 +1,14 @@
-import { NavLink } from 'react-router - dom';
+import { NavLink } from "react-router-dom";
 
+const DashboadPage = () => {
+  <section>
+    <h1>Dashboard</h1>
+    <p>This is the dashboard</p>
 
-const DashboardPage = ()=>{
-    return (
-        <section>
-            <h1>Dashboard</h1>
-            <p>This is the dashboard</p>
-
-            <NavLink to='/posts' className= 'button'>
-                View posts
-            </NavLink>
-        </section>
-    )
+    <NavLink to="/posts" className="button">
+      View Posts
+    </NavLink>
+  </section>
 }
 
-export default DashboardPage
+export default DashboadPage; 

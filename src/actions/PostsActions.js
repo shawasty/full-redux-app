@@ -27,13 +27,14 @@ export const getPostsFailure = ()=>({
 export function fetchPosts(){
     return async (dispatch) => {
         dispatch(getPosts()) // starting , getting the post info
-
+        
         try{
             const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
             dispatch(getPostsSuccess(response.data)) // if success update state
-            console.log(response.data)
+            console.log('debug',response.data[1])
         }catch(error) {
             dispatch(getPostsFailure())
         }
+        
     }
 }
